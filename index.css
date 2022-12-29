@@ -1,0 +1,155 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+}
+.col-1{
+  flex: 1; 
+}
+.col-2{
+  flex: 2; 
+}
+.align-center{
+  align-items: center;
+}
+.text-right{
+  text-align: right;
+}
+hr{
+  border: none;
+  border-top: 1px solid #ddd;
+}
+header{
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 2rem 0;
+  border-bottom: 1px solid #ddd;
+}
+header h1 a{
+  color: goldenrod;
+}
+header .nav-links a,
+.cartBtn{
+  margin-left: 8px;
+  color: goldenrod;
+  background-color: #f4f4f4;
+  padding: .4rem 1rem;
+  border-radius: 5px;
+  font-family: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: .2s;
+  border: none;
+  outline: none;
+}
+header .nav-links a:hover,
+.cartBtn:hover{
+  background-color: #ddd;
+
+}
+section{
+  width: 80%;
+  padding: 2rem 0;
+  margin: auto;
+  gap: 1.8rem;
+}
+h2,h3{
+  color: #484848;
+}
+
+.addToCart,
+.btn{
+  background-color: goldenrod;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: .4rem 1rem;
+  border: none;
+  transition: .3s;
+}
+.addToCart:hover,
+.btn:hover{
+  opacity: .7;
+}
+.imgBox{
+  width: 340px;
+  height: 260px;
+  overflow: hidden;
+  border-bottom-left-radius: 30px;
+
+}
+.imgBox .small{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .4s;
+}
+.row.products{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.product{
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 8px 8px 20px rgba(0,0,0,.1);
+}
+.details{
+  padding: 1rem 1.3rem;
+  position: relative;
+  
+
+}
+.details::after{
+  content: '';
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: goldenrod;
+  top: -10%;
+  right: -10%;
+  z-index: -1;
+  box-shadow: -8px 8px 20px rgba(0,0,0,.2);
+  transition: .5s;
+}
+
+.product:hover .details::after{
+  top: 13%;
+  transform: rotate(150deg);
+}
+.product:hover .small{
+  transform: scale(1.1);
+}
+.basketItem{
+  margin-bottom: 5px;
+}
+.cartBadge{
+  font-size: 13px;
+  background-color: tomato;
+  color: #fff;
+  padding: 0 5px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+
+
+/* ############################################### */
+
